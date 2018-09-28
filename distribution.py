@@ -39,7 +39,17 @@ Notice about this example:
 text=input("Please enter a string of text (the bigger the better): ")
 print('The distribution of characters in "'+text+'" is: ')
 letterlist=[]
-letter=""
+
 for i in "abcdefghijklmnopqrstuvwxyz":
-    (text.count('abcdefghijklmnopqrstuvwxyz'))
+    letterlist.append(text.count(i))
+print(letterlist)
+
+wordlist=[]
+word=""
+for i in text:
+    word=word+i
+wordlist.append(word)
+print(wordlist)
+
+    
     
