@@ -38,18 +38,16 @@ Notice about this example:
 """
 text=input("Please enter a string of text (the bigger the better): ")
 print('The distribution of characters in "'+text+'" is: ')
-letterlist=[]
+freqlist=[]
 
 for i in "abcdefghijklmnopqrstuvwxyz":
-    letterlist.append(text.count(i))
+    freqlist.append(text.count(i))
+print(freqlist)
+
+letterlist=list(text)
 print(letterlist)
 
-wordlist=[]
-word=""
-for i in text:
-    word=word+i
-wordlist.append(word)
-print(wordlist)
+zip([freqlist],[letterlist])
 
     
     
