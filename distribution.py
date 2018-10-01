@@ -52,5 +52,7 @@ print(zip)
 (zip.sort())
 print(zip)
 
+for i in range(len(zip)):
+    zip[i]
     
     
