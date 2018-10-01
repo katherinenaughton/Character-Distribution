@@ -40,10 +40,13 @@ text=input("Please enter a string of text (the bigger the better): ")
 print('The distribution of characters in "'+text+'" is: ')
 freqlist=[]
 
+letterlist=[]
+letter=""
 for i in "abcdefghijklmnopqrstuvwxyz":
     freqlist.append(text.count(i)*i)
+newlist=[x.replace(" ", "") for x in freqlist]
 print(freqlist)
-
 freqlist.sort()
 print(freqlist)
+
 
