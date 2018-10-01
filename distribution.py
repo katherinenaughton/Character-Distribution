@@ -46,8 +46,11 @@ print(freqlist)
 
 letterlist=list(text)
 print(letterlist)
+zip=list(zip(freqlist,letterlist))
+print(zip)
 
-zip([freqlist],[letterlist])
+(zip.sort())
+print(zip)
 
     
     
