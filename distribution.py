@@ -41,18 +41,9 @@ print('The distribution of characters in "'+text+'" is: ')
 freqlist=[]
 
 for i in "abcdefghijklmnopqrstuvwxyz":
-    freqlist.append(text.count(i))
+    freqlist.append(text.count(i)*i)
 print(freqlist)
 
-letterlist=list(text)
-print(letterlist)
-zip=list(zip(freqlist,letterlist))
-print(zip)
+freqlist.sort()
+print(freqlist)
 
-(zip.sort())
-print(zip)
-
-for i in range(len(zip)):
-    zip[i]
-    
-    
