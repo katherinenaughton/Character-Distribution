@@ -36,31 +36,35 @@ Notice about this example:
   in the text and they are listed in the output in alphabetical order.
 * Letters that do not occur in the text are not listed in the output at all.
 """
-text=input("Please enter a string of text (the bigger the better): ")
-print('The distribution of characters in "'+text+'" is: ')
+text1=input("Please enter a string of text (the bigger the better): ")
+print('The distribution of characters in "'+text1+'" is: ')
+
+text=text1.lower()
 
 letlist=[]
 for i in "abcdefghijklmnopqrstuvwxyz":
     count=text.count(i)
     if count>0:
         letlist.append(count*i)
-print(letlist)
+#print(letlist)
 
 freqlist=[]
 for i in "abcdefghijklmnopqrstuvwxyz":
     count=text.count(i)
     if count>0:
         freqlist.append(count)
-print(freqlist)
+#print(freqlist)
 
 comblist=list(zip(freqlist, letlist))
 comblist.sort()
-print(comblist)
+#print(comblist)
 
 for n in range(len(comblist),-1, -1):
     for c in comblist:
         if c[0]==n:
             print(c[1])
+            
+#CONVERT UPPERCASE TO LOWERCASE
     
     
     
