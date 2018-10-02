@@ -57,8 +57,12 @@ comblist=list(zip(freqlist, letlist))
 comblist.sort()
 print(comblist)
 
-for i in comblist:
-    length=len(comblist)
+for n in range(len(comblist)):
+    for c in comblist:
+        if c[0]==n:
+            print(c[1])
+    
+    
     
 
 
