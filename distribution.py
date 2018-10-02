@@ -38,15 +38,23 @@ Notice about this example:
 """
 text=input("Please enter a string of text (the bigger the better): ")
 print('The distribution of characters in "'+text+'" is: ')
-freqlist=[]
 
-letterlist=[]
-letter=""
+letlist=[]
 for i in "abcdefghijklmnopqrstuvwxyz":
-    freqlist.append(text.count(i)*i)
-newlist=[x.replace(" ", "") for x in freqlist]
+    count=text.count(i)
+    if count>0:
+        letlist.append(count*i)
+print(letlist)
+
+freqlist=[text.count()]
 print(freqlist)
-freqlist.sort()
-print(freqlist)
+
+'''
+for j in freqlist:
+    length=len(text)
+    if count(j)=length:
+        print(j)
+'''
+    
 
 
