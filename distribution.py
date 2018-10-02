@@ -53,10 +53,18 @@ for i in "abcdefghijklmnopqrstuvwxyz":
         freqlist.append(count)
 print(freqlist)
 
-comblist=list(zip(letlist, freqlist))
+comblist=list(zip(freqlist, letlist))
+comblist.sort()
 print(comblist)
-comblist.sort
-print(comblist)
+
+for i in comblist:
+    length=len(comblist)
+    
+
+
+
+
+
     
 
 
