@@ -46,15 +46,17 @@ for i in "abcdefghijklmnopqrstuvwxyz":
         letlist.append(count*i)
 print(letlist)
 
-freqlist=[text.count()]
+freqlist=[]
+for i in "abcdefghijklmnopqrstuvwxyz":
+    count=text.count(i)
+    if count>0:
+        freqlist.append(count)
 print(freqlist)
 
-'''
-for j in freqlist:
-    length=len(text)
-    if count(j)=length:
-        print(j)
-'''
+comblist=list(zip(letlist, freqlist))
+print(comblist)
+comblist.sort
+print(comblist)
     
 
 
